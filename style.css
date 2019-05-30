@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src:  url('Fonts/spaceGrotesk-regular.woff2') format('woff2'),
+        url(Fonts/spaceGrotesk-regular.woff') format('woff');
+      }
+
+*{
+  margin: 0px;
+  padding: 0px;
+  cursor: url(Images/arrow2.png), auto;
+
+}
+
+
+ a:hover{
+ /*/
+  cursor: url(images/arrow-hover.png), auto;/*/
+  font-style: italic;
+  transition-duration: 3ms;
+
+}
+.scroll{
+  position: fixed;
+  float: left;
+  width: 50%;
+  font-family: spaceGrotesk, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.tomroche{
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+}
+
+
+body{
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-color: #0011ff;
+  border-width: 0px;
+}
+/* BLINKING TITLE!!
+.title, blinker {
+  animation: blinker 0.8s infinite; !IMPORTANT
+  margin-right: 400px;
+  transform: rotate(10deg);
+  font-family: spaceGrotesk, sans-serif;
+  color: #0011ff;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 75px 10px 0px -10px;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+*/
+  .nav {
+    position: fixed;
+    float: left;
+    margin-top: 50px;/* CHANGE TO 10 WHEN BLINKING TEXT IS ACTIVE*/
+    margin-right: 50%;
+    margin-left: 10px;
+    font-family: spaceGrotesk, sans-serif;
+    font-size: 24px;
+}
+
+.paragraph{
+  margin: -40px 0px 0px 0px;
+}
+
+.services{
+    font-family: spaceGrotesk, sans-serif;
+    font-size: 24px;
+    list-style-type: none; !IMPORTANT
+    margin: 0px 0px 0px 0px;
+    line-height: 1.2em;
+}
+
+#content{
+  position: absolute;
+  float: right; !IMPORTANT
+  z-index: 1;
+  margin-left:50%;!IMPORTANT
+  max-width: 50%;
+
+
+}
+
+.footer{
+font-family: spaceGrotesk, sans-serif;
+font-size: 20px;
+margin: 0px 0px 10px 10px;
+position: fixed;
+left: 0;
+bottom: 0;
+
+
+}
