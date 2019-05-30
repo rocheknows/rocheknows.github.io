@@ -58,6 +58,20 @@ body{
   }
 }
 */
+
+.app {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #content {
+      flex-basis: 50%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+
   .nav {
     position: fixed;
     float: left;
