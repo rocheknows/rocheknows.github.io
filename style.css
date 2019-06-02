@@ -35,7 +35,8 @@ img {
 
 
 #content{
-  width: 95%%;
+  margin: 40px 0px 0px 0px;
+  width: 100%;
   padding: 5px;
 
 
@@ -53,7 +54,7 @@ img {
   width: 100%;
 }
 
-@media only screen and (min-width: 840px) {
+@media (min-width: 840px) {
 
   .text{
     position: fixed;
