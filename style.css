@@ -1,138 +1,81 @@
-@font-face {
-  font-family: 'SpaceGrotesk';
-  src:  url(Fonts/spaceGrotesk-regular.woff2) format('woff2'),
-        url(Fonts/spaceGrotesk-regular.woff) format('woff');
-      }
-
-@media only screen and (max-width: 480px) {
-
-
-        .app {
-             display: flex;
-             flex-wrap: nowrap;
-
-
-            }
-
-        .scroll{
-              position: fixed;
-              float: right;
-              width: 100%;
-              font-family: spaceGrotesk, sans-serif;
-              background-color: black;
-              color: white;
-            }
-      }
-
 *{
-  margin: 0px;
-  padding: 0px;
-  cursor: url(Images/arrow2.png), auto;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  cursor: url(images/arrow2.png), crosshair;
 
 }
-
-
- a:hover{
- /*/
-  cursor: url(images/arrow-hover.png), auto;/*/
-  font-style: italic;
-  transition-duration: 3ms;
-
-}
-.scroll{
-  position: fixed;
-  float: left;
-  width: 50%;
-  font-family: spaceGrotesk, sans-serif;
-  background-color: black;
-  color: white;
-}
-
-.tomroche{
+a{
+  background-color: #01f;
+  color: #fff;
   text-decoration: none;
-  color: black;
-  background-color: yellow;
 }
-
+a:hover{
+  font-style: italic;
+  transition-delay: 3ms;
+  text-decoration: none;
+}
 
 body{
-  background-color: #f2f2f2;
-  border-style: solid;
-  border-color: #0011ff;
-  border-width: 0px;
-}
-/* BLINKING TITLE!!
-.title, blinker {
-  animation: blinker 0.8s infinite; !IMPORTANT
-  margin-right: 400px;
-  transform: rotate(10deg);
-  font-family: spaceGrotesk, sans-serif;
-  color: #0011ff;
-  font-weight: normal;
-  font-size: 30px;
-  margin: 75px 10px 0px -10px;
-}
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-*/
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  list-style-type: none;
 
-.app {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    #content {
-      flex-basis: 50%;
-
-    }
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-
-  .nav {
-    position: fixed;
-    float: left;
-    margin-top: 50px;/* CHANGE TO 10 WHEN BLINKING TEXT IS ACTIVE*/
-    margin-right: 50%;
-    margin-left: 10px;
-    font-family: spaceGrotesk, sans-serif;
-    font-size: 24px;
 }
 
-.paragraph{
-  margin: -40px 0px 0px 0px;
-}
-
-.services{
-    font-family: spaceGrotesk, sans-serif;
-    font-size: 24px;
-    list-style-type: none;
-    margin: 0px 0px 0px 0px;
-    line-height: 1.2em;
-}
-
-#content{
-  position: absolute;
-  float: right;
-  z-index: 1;
-  margin-left:50%;
-
-
-
+img {
+  height: auto;
+  width: 100%;
 }
 
 .footer{
-font-family: spaceGrotesk, sans-serif;
-font-size: 20px;
-margin: 0px 0px 10px 10px;
-position: fixed;
-left: 0;
-bottom: 0;
+  padding: 0px 0px 15px 10px;
+}
+
+
+#content{
+  width: 95%%;
+  padding: 5px;
 
 
 }
+
+.images{
+  margin: 20px 0px 0px 0px;
+}
+
+.scroll{
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+@media only screen and (min-width: 840px) {
+
+  .text{
+    position: fixed;
+    float: left;
+    width: 50%;
+  }
+  .images{
+    float: right;
+    width: 50%;
+    margin: -11px -10px;
+  }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0px 0px -10px 0px;
+  }
+
+  #content{
+
+    margin-top: 35px;
+
+
+
+  }
